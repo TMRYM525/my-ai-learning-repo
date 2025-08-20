@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day3 条件分岐（挨拶）</title>
+  <style>
+    body{font-family:system-ui,Arial,sans-serif;text-align:center;padding:40px;background:#f0f9ff}
+    input,button{font-size:16px;padding:8px 12px;margin-top:8px}
+    #result{margin-top:16px;font-weight:bold}
+  </style>
+</head>
+<body>
+  <h1>Day3：時刻で挨拶を出し分け</h1>
+  <p>0〜23 の時刻を入力して「挨拶する」を押してください。</p>
+  <input type="number" id="hourInput" min="0" max="23" placeholder="例: 15" />
+  <br />
+  <button onclick="greet()">挨拶する</button>
+  <div id="result"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
