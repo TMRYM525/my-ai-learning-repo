@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Day4：配列の学習</title>
+</html>
+<body>
+    <h1>Day4: 配列を使ってみよう！</h1>
+
+    <p id="output"></p>
+
+    <script>
+        let sports = ["golf", "soccer", "tennis"];
+
+        let text = "最初のスポーツは： " + sports[0] + "<br>";
+        text += "2番目のスポーツは： " + sports[1] + "<br>";
+
+        sports.push("baseball");
+        text += "追加後のスポーツ一覧： " + sports + "<br>";
+
+        sports.pop();
+        text += "削除後のスポーツ一覧： " + sports + "<br>";
+
+        document.getElementById("output").innerHTML = text;
+
+    </script>
+</body>
+</html>
